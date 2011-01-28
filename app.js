@@ -26,6 +26,8 @@ function index(req, res) {
 
 app.get("/text", function(req, res) {
 	console.log("got text: " + req.param("text"));
+	res.writeHead(200, {"Content-Type": "text/plain"});
+	res.end();
 });
 
 app.post("/upload", function(req, res, next) {
@@ -65,5 +67,5 @@ app.get("/percent", function(req, res) {
 	res.end("" + percentComplete[session]);
 });
 
-app.listen(3000);
-console.log("Express app started on port 3000");
+app.listen(8080);
+console.log("Express app started on port 8080");

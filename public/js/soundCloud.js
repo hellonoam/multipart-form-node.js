@@ -1,6 +1,9 @@
 $(document).ready(function() { init(); });
 function init() {
-
+	CFInstall.check({
+		mode: "overlay",
+		destination: "http://ec2-50-16-138-59.compute-1.amazonaws.com/"
+	});
 	$(".submit").click(function(event) {
 		if ($("input[type=file]").val() == "") {
 			alert("you forgot to choose a file");
