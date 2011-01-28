@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>SoundCloud Demo</title>
+		<link href="css/soundCloud.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/soundCloud.js"></script>
+	</head>
+	<body>
+		<div class="box">
+		<form name="form" action="/" target="frame" method="post"
+		 enctype="multipart/form-data">
+			<p>text: <input type="text" value="hello there"></p>
+			<p>file: <input type="file" name="file" /></p>
+			<p><input class="submit" type="submit" value="Upload" /></p>
+			<div class="percent"></div>
+		</form>
+		</div>
+		<div>
+			<iframe name="frame" id="frame" class="hidden" src="#"/>
+		</div>
+	</body>
+</html>

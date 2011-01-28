@@ -1,0 +1,38 @@
+body {
+	border-top: 5px solid #5C9FC0;
+	background: #eee;
+	margin: 0px;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	color: #563c12;
+}
+
+.box {
+	background:white;
+	-webkit-box-shadow: #AAA 0px 0px 3px;
+	-moz-box-shadow: #AAA 0px 0px 3px;
+	height: 150px;
+	width: 300px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	margin: 30px auto 0px auto;
+	font-size: 90%;
+	padding:10px;
+}
+
+input[type="text"] {
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	border: 1px solid #ccc;
+	margin:5px;
+}
+
+.hidden {
+	width: 0px;
+	height: 0px;
+	visibility: hidden;
+}
+
+.path {
+	margin: 50px auto 0px auto;
+	width: 40%;
+}
