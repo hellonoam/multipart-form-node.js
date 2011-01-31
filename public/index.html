@@ -1,3 +1,5 @@
+<!-- multipart form upload. the form is submitted from the the iframe so that we can -->
+<!-- still call percent and see it update -->
 <html>
 	<head>
 		<title>SoundCloud Demo</title>
@@ -13,9 +15,11 @@
 			<p>text: <input type="text" value="hello there"></p>
 			<p>file: <input type="file" name="file" /></p>
 			<p><input class="submit" type="submit" value="Upload" /></p>
+			<!-- where the percent complete is presented -->
 			<div class="percent"></div>
 		</form>
 		</div>
+		<!-- hidden iframe where the form is sent from -->
 		<div>
 			<iframe name="frame" id="frame" class="hidden" src="#"/>
 		</div>
